@@ -6,29 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" type="text/css" media="screen">
 </head>
 
 <body>
     <main>
-        <form action="/action_page.php">
-            <div>
-                <label for="nom" name="nombre">Nom:</label><br>
-                <input type="text" name="nombre" value="">
-            </div>
-            <br>
-            <div>
-                <label for="cognom" name="apellido">Cognom:</label><br>
-                <input type="text" name="apellido" value="">
-            </div>
-            <br>
-            <div>
-                <label for="correu" name="correo">Correu:</label><br>
-                <input type="email" name="correo" value="">
-            </div>
-            <br>
+        <div class="formulario">
+            <form action="/action_page.php" method="POST">
+                <fieldset>
+                    <div>
+                        <label for="nombre" name="nombre">Nom:</label><br>
+                        <input placeholder="" type="text" name="nombre" value="">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="apellido" name="apellido">Cognom:</label><br>
+                        <input type="text" name="apellido" value="">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="correo" name="correo">Correu:</label><br>
+                        <input type="email" name="correo" value="">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="telefono" name="telefono">Telèfon:</label><br>
+                        <input type="text" name="telefono" value="">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="fechaEntrada" name="fechaEntrada">Data d'arribada:</label><br>
+                        <input type="date" name="fechaEntrada" value="">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="fechaSalida" name="fechaSalida">Data de sortida:</label><br>
+                        <input type="date" name="fechaSalida" value="">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="comentarios" name="comentarios">Comentari:</label><br>
+                        <textarea name="comentarios"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="checkbox" class="botonComida" name="desayuno" value="" id="desayuno">
+                        <label for="desayuno" name="desayuno">Desayuno:</label><br>
 
-            <input type="submit" value="Envia">
-        </form>
+                        <input type="checkbox" class="botonComida" name="comida" value="" id="comida">
+                        <label for="comida" name="comida">Comida:</label><br>
+
+                        <input type="checkbox" name="cena" value="" id="cena">
+                        <label for="cena" name="desayuno">Cena:</label><br>
+
+                    </div>
+                    <br>
+                    <div>
+                        <label>Mascotas</label><br>
+                        <select name="mascotas">
+                            <option selected value="0">Ninguno</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+
+
+                    <input type="submit" value="Envia">
+                </fieldset>
+            </form>
+        </div>
     </main>
 </body>
 
