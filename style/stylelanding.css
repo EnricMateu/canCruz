@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://canplans.files.wordpress.com/2015/12/mobil-fede-1753.jpg?w=640");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+
