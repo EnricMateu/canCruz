@@ -22,6 +22,7 @@ class CreateReservationsTable extends Migration
             $table->string('postalCode');
             $table->date('checkinDate');
             $table->date('checkoutDate');
+            $table->integer('roomNumber');
             $table->integer('numberPeople');
             $table->integer('numberPets')->default('0');
             $table->boolean('breakfast')->nullable();
@@ -33,7 +34,7 @@ class CreateReservationsTable extends Migration
             $table->boolean('validated')->default(false);
             $table->string('comments')->nullable();
             $table->string('language');
-            $table->boolean('dataProtection')->default(false);
+            $table->boolean('dataProtection')->default(false); 
             $table->timestamps();
         });
     }

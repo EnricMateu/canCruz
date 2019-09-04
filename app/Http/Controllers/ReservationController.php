@@ -14,7 +14,9 @@ class ReservationController extends Controller
      */
     public function index()
     {
-        //
+        $reservation = Reservation::all();
+        //var_dump ($reservation);  
+        return view('reservation', ['reservation' => $reservation]);
     }
 
     /**
@@ -36,7 +38,7 @@ class ReservationController extends Controller
     public function store(Request $request)
     {
         Reservation::create($request->all());
-
+        return redirect('reservation/create');
         /*$reserva = new Reservation();
         $reserva->name=$request->nombre;
         $reserva->surname=$request->apellido;
@@ -51,12 +53,7 @@ class ReservationController extends Controller
         $reserva->lunch=$request->comida;
         $reserva->dinner=$request->cena;
         $reserva->dataProtection=$request->LGPD;
-        $reserva->language=$request->idioma;*/
-
-
-
-
-    
+        $reserva->language=$request->idioma;*/   
     }
 
     /**
@@ -67,7 +64,7 @@ class ReservationController extends Controller
      */
     public function show(Reservation $reservation)
     {
-        //
+       
     }
 
     /**

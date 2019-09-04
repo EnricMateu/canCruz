@@ -21,6 +21,9 @@
     <label>Fecha de salida</label>
     <input type="date" name="checkoutDate">
     <br>
+    <label>Numero de habitacion</label>
+    <input type="text" name="roomNumber">
+    <br>
     <label>Numero de personas</label>
     <input type="text" name="numberPeople">
     <br>
@@ -33,10 +36,10 @@
     <label>Comida</label>
     <input type="checkbox" name="lunch" value='1'>
     <br>
-    <label>Cena</label>
+    <label for="dinner">Cena</label>
     <input type="checkbox" name="dinner" value='1'>
     <br>
-    <label>Comentarios</label>
+    <label for="comments">Comentarios</label>
     <input type="text" name="comments">
     <br>
     <label>Idioma</label>
