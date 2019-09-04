@@ -1,33 +1,49 @@
 <form method="POST" action="/reservation">
+    @csrf
     <label>Nombre</label>
-    <input type="text" name="nombre"> 
+    <input type="text" name="name"> 
+    <br>
+    <label>Apellidos</label>
+    <input type="text" name="surname"> 
     <br>
     <label>Email</label>
     <input type="email" name="email">
     <br>
     <label>Telefono</label>
-    <input type="text" name="telefono">
+    <input type="text" name="telephone">
+    <br>
+    <label>Codigo Postal</label>
+    <input type="text" name="postalCode">
     <br>
     <label>Fecha de entrada</label>
-    <input type="date" name="fechaEntrada">
+    <input type="date" name="checkinDate">
     <br>
     <label>Fecha de salida</label>
-    <input type="date" name="fechaSalida">
+    <input type="date" name="checkoutDate">
     <br>
     <label>Numero de personas</label>
-    <input type="text" name="numeroPersonas">
+    <input type="text" name="numberPeople">
     <br>
     <label>Numero de mascotas</label>
-    <input type="text" name="numeroMascotas">
+    <input type="text" name="numberPets">
     <br>
     <label>Desayuno</label>
-    <input type="radio" name="desayuno">
+    <input type="checkbox" name="breakfast" value='1'>
     <br>
-    <label>LGPD</label>
-    <input type="radio" name="LGPD">
+    <label>Comida</label>
+    <input type="checkbox" name="lunch" value='1'>
+    <br>
+    <label>Cena</label>
+    <input type="checkbox" name="dinner" value='1'>
+    <br>
+    <label>Comentarios</label>
+    <input type="text" name="comments">
     <br>
     <label>Idioma</label>
-    <input type="text" name="idioma">
+    <input type="text" name="language">
+    <br>
+    <label>Aceptar tratamiento de datos personales</label>
+    <input type="checkbox" name="dataProtection" value='1'>
     <br>
     <input type="submit">
 </form>

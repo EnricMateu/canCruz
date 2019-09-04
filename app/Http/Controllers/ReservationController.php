@@ -35,7 +35,28 @@ class ReservationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Reservation::create($request->all());
+
+        /*$reserva = new Reservation();
+        $reserva->name=$request->nombre;
+        $reserva->surname=$request->apellido;
+        $reserva->email=$request->email;
+        $reserva->telephone=$request->telefono;
+        $reserva->postalCode=$request->codigoPostal;
+        $reserva->checkinDate=$request->fechaEntrada;
+        $reserva->checkoutDate=$request->fechaSalida;
+        $reserva->numberPeople=$request->numeroPersonas;
+        $reserva->numberPets=$request->numeroMascotas;
+        $reserva->breakfast=$request->desayuno;
+        $reserva->lunch=$request->comida;
+        $reserva->dinner=$request->cena;
+        $reserva->dataProtection=$request->LGPD;
+        $reserva->language=$request->idioma;*/
+
+
+
+
+    
     }
 
     /**
