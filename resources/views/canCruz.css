@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    width: 100%;
+    height: 350vh;
+}
+
+.container-fluid{
+    height: 100%;
+}
+
+.start{
+    height: 40vh;
+    border: 1px solid red;
+}
+
+.masia, .sleep, .aboutUs, .contact{
+    height: 70vh;
+    border: 1px solid blue;
+}
+
+.bottom {
+    height: 30vh;
+    border: 1px solid orangered;
+}
+nav > .list >li{
+    display: inline-block;
+    padding-right: 2rem;
+}
+nav{
+    border: 1px solid orangered;
+    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navBar {
+    display:flex;
+    border: 1px solid orangered;
+    margin-top: 8vh;
+}
+.logo{
+    height: 4rem;
+    width: 4rem;
+    border: 1px solid orangered;
+    margin-left: 11.5%;
+}
+.reservationDate{
+    margin-top:2vh;
+    height: 10vh;
+    width: 100%;
+    border: 1px dotted green;
+}
+form{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid yellow;
+}
+.masia-top, .masia-bottom{
+    height: 31.7vh;
+    border:1px solid pink;
+    display: flex;
+}
+.imageMasia, .descriptionMasia{
+    height: 100%;
+    width: 50%;
+    border:1px solid red;
+}
+h1{
+    text-align: center;
+}
+.imageMasia{
+    background: url("assets/portalMasiaCanCruz.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imageMasia2{
+    background: url("assets/portalMasiaCanCruz.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imageMasia2, .descriptionMasia2{
+    height: 100%;
+    width: 50%;
+    border:1px solid red;
+}
+
+.sleep-room {
+    height: 70%;
+    border: 1px solid purple;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.room-slider{
+    height: 80%;
+    width: 90%;
+
+    border: 1px solid black;
+
+}
