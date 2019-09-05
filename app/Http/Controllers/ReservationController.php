@@ -16,7 +16,7 @@ class ReservationController extends Controller
     {
         $reservation = Reservation::all();
         //var_dump ($reservation);  
-        return view('reservation', ['reservation' => $reservation]);
+        return view('Reservation/reservation', ['reservation' => $reservation]);
     }
 
     /**
@@ -37,7 +37,7 @@ class ReservationController extends Controller
      */
     public function store(Request $request)
     {
-        Reservation::create($request->all());
+        Reservation::create($request->all()); 
         return redirect('reservation/create');
         /*$reserva = new Reservation();
         $reserva->name=$request->nombre;

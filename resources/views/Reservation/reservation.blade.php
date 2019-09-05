@@ -8,6 +8,26 @@
 </head>
 
 <body>
-<table> <th> </th> </table>    
+<table> <th> Reservas de esta mierda</th>
+    
+<?php
+    foreach ($reservation as $value) {
+?>
+
+<tr>
+        <td><?php echo $value->name ?></td>
+        <td><?php echo $value->surname ?></td>
+        <td><?php echo $value->telephone ?></td>
+        <td><?php echo $value->email ?></td>
+        <td><?php echo $value->postalCode ?></td>
+        <td><?php echo $value->checkinDate ?></td>
+        <td><?php echo $value->checkoutDate ?></td>
+        <td><?php echo $value->roomNumber ?></td> 
+</tr>
+    
+<?php
+    }
+?>
+ </table>  
 </body>
 </html>
