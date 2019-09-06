@@ -5,7 +5,8 @@
 
 body{
     width: 100%;
-    height: 350vh;
+   /*  height: 410vh; */
+    font-family: Rokkitt;
 }
 
 .container-fluid{
@@ -13,8 +14,13 @@ body{
 }
 
 .start{
-    height: 40vh;
+    height: 100vh;
     border: 1px solid red;
+    background-image:url("assets/portalMasiaCanCruz.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position:relative;
 }
 
 .masia, .sleep, .aboutUs, .contact{
@@ -29,10 +35,15 @@ body{
 nav > .list >li{
     display: inline-block;
     padding-right: 2rem;
+
+}
+nav > .list >li > a{
+    text-decoration:none;
+    color:#fff;
 }
 nav{
     border: 1px solid orangered;
-    margin-left: 30%;
+    margin-left: 44%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +51,7 @@ nav{
 .navBar {
     display:flex;
     border: 1px solid orangered;
-    margin-top: 8vh;
+    margin-top: 5vh;
 }
 .logo{
     height: 4rem;
@@ -49,12 +60,20 @@ nav{
     margin-left: 11.5%;
 }
 .reservationDate{
-    margin-top:2vh;
+    position: absolute;
+    bottom:0;
     height: 10vh;
     width: 100%;
     border: 1px dotted green;
 }
-form{
+#slogan{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:#fff;
+}
+#form1{
     height: 100%;
     width: 100%;
     display:flex;
@@ -109,3 +128,81 @@ h1{
     border: 1px solid black;
 
 }
+.about-top,.about-middle,.about-bottom{
+    height: 21.5vh;
+    width: 100%;
+    display: flex;
+}
+.mapForm{
+    height: 50vh;
+    border: 1px solid black;
+}
+.formConctactAndLocation{
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+    display:flex;
+    justify-content: space-around;
+}
+.formContact, .location{
+    height: 100%;
+    width: 35%;
+    border: 1px solid red;
+}
+#contactForm1{
+   height: 60%;
+   width:100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   border: 1px solid plum;
+}
+.socialContact{
+    height: 40%;
+    width: 100%;
+    outline: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    border: 1px solid plum;
+}
+.icon{
+    height: 90%;
+    width: 60%;
+    display: flex;
+    border: 1px solid red;
+}
+.socialIcon{
+    width: 50%;
+    height: 100%;;
+    object-fit: cover;
+}
+.socialD{
+    margin-left: 0.5rem;
+}
+.locationCanCruz{
+    height: 60%;
+    width: 100%;
+}
+iframe{
+    height: 100%;
+    width: 100%;
+}
+.locationAddress{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    border:1px solid red;
+}
+.a{
+    height: 100%;
+    width:20%;
+    border:1px solid black;
+}
+.locationIcon{
+    margin-top:5%;
+    height: 40%;
+    width: 13%;
+}
+
