@@ -8,13 +8,18 @@
 </head>
 
 <body>
-<table> <th> Reservas de esta mierda</th>
+
+    
+<table> <th>Listado de reservas</th>
     
 <?php
+
     foreach ($reservation as $value) {
 ?>
 
 <tr>
+    <!-- preguntar a david como validar reserva -->
+
         <td><?php echo $value->name ?></td>
         <td><?php echo $value->surname ?></td>
         <td><?php echo $value->telephone ?></td>

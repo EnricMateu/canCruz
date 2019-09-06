@@ -62,9 +62,14 @@ class ReservationController extends Controller
      * @param  \App\Reservation  $reservation
      * @return \Illuminate\Http\Response
      */
-    public function show(Reservation $reservation)
+    public function show(Reservation $id)
     {
-       
+        $reservation = Reservation::find($id);
+      //  $client=$reservation->find($id);
+
+        //$users = $reservation->intersect(Reservation::whereIn('email', $email)->get());
+        return view('Reservation/reservation', ['reservation' => $reservation]);
+    
     }
 
     /**
