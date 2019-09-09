@@ -39,22 +39,7 @@ class ReservationController extends Controller
     {
         Reservation::create($request->all()); 
         return redirect('reservation/create');
-        /*$reserva = new Reservation();
-        $reserva->name=$request->nombre;
-        $reserva->surname=$request->apellido;
-        $reserva->email=$request->email;
-        $reserva->telephone=$request->telefono;
-        $reserva->postalCode=$request->codigoPostal;
-        $reserva->checkinDate=$request->fechaEntrada;
-        $reserva->checkoutDate=$request->fechaSalida;
-        $reserva->numberPeople=$request->numeroPersonas;
-        $reserva->numberPets=$request->numeroMascotas;
-        $reserva->breakfast=$request->desayuno;
-        $reserva->lunch=$request->comida;
-        $reserva->dinner=$request->cena;
-        $reserva->dataProtection=$request->LGPD;
-        $reserva->language=$request->idioma;*/   
-    }
+        }
 
     /**
      * Display the specified resource.
@@ -80,7 +65,7 @@ class ReservationController extends Controller
      */
     public function edit(Reservation $reservation)
     {
-        //
+        return view('Reservation.edit', ['reservation' => $reservation]);
     }
 
     /**
@@ -103,6 +88,7 @@ class ReservationController extends Controller
      */
     public function destroy(Reservation $reservation)
     {
-        //
+        $reservation->delete();
+        return redirect('reservation');
     }
 }

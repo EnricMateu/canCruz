@@ -28,6 +28,18 @@
         <td><?php echo $value->checkinDate ?></td>
         <td><?php echo $value->checkoutDate ?></td>
         <td><?php echo $value->roomNumber ?></td> 
+        <td><?php echo $value->validated ?></td>
+        <td>
+            <form method="GET" action="/reservation/{{$value->id}}/edit">
+            @csrf
+            @method('edit')
+            <input type="submit" value="Editar">
+        </td>
+        <td><form method="POST" action="/reservation/{{$value->id}}">
+        @csrf 
+        @method('delete')
+        <input type="submit" value="Borrar">
+        </form></td>
 </tr>
     
 <?php
