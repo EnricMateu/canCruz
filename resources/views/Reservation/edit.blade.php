@@ -1,6 +1,6 @@
-<form method="POST" action="/reservation">
+<form method="POST" action="/reservation/{{$reservation->id}}">
     @csrf
-    @method('edit')
+    @method('patch')
     <label>Nombre</label>
     <input type="text" name="name" value="{{$reservation->name}}"> 
     <br>

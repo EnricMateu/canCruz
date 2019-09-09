@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Middleware\RedirectIfAuthenticated;
 use App\Reservation;
 use Illuminate\Http\Request;
 
@@ -77,7 +78,9 @@ class ReservationController extends Controller
      */
     public function update(Request $request, Reservation $reservation)
     {
-        //
+            $reservation->update($request->all());
+            return redirect('reservation');
+       
     }
 
     /**
