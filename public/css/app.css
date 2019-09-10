@@ -1,4 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Rokkitt&display=swap);@charset "UTF-8";
+
+@font-face {
+  font-family: "Rokkitt", serif;
+  src: url("/fonts/Rokkitt-Regular.ttf");
+}
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -10644,6 +10649,12 @@ a.text-dark:focus {
   }
 }
 
+.primary-title {
+  font-family: "Rokkitt", serif;
+  text-align: center;
+  width: 100%;
+}
+
 body {
   width: 100%;
   font-family: Rokkitt;
@@ -10723,6 +10734,7 @@ body {
 .start .navBar .logo svg {
   fill: white;
   width: 120px;
+  height: 100px;
 }
 
 .start .navBar nav {
@@ -10758,17 +10770,21 @@ body {
 }
 
 .imageMasia {
-  background: url(/images/portalMasiaCanCruz.jpg?d038ff61b67938b21cd4b4ba2a75c4d2);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  overflow: hidden;
+  text-align: center;
+}
+
+.imageMasia img {
+  height: 100%;
 }
 
 .imageMasia2 {
-  background: url(/images/portalMasiaCanCruz.jpg?d038ff61b67938b21cd4b4ba2a75c4d2);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  overflow: hidden;
+  text-align: center;
+}
+
+.imageMasia2 img {
+  height: 100%;
 }
 
 .imageMasia2,

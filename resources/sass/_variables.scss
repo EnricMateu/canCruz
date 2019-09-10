@@ -4,4 +4,11 @@ $startSlogan-size-font-desktop: 59px;
 $break-small: 320px;
 $break-large: 768px;
 
+$font-family-title: 'Rokkitt', serif;
+
 $colorLogo: white;
+
+@font-face {
+    font-family: 'Rokkitt', serif;
+    src: url("/fonts/Rokkitt-Regular.ttf");
+  }

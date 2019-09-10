@@ -23,7 +23,15 @@ body {
       display: flex;
       justify-content: space-around;
       align-items: center;
+      
+      
+      input[type="date"]{
+        background-color: transparent;
+        border:none;
+        border-bottom: 1px dotted white;
+      }
     }
+
   }
   #slogan {
     position: absolute;
@@ -60,6 +68,7 @@ body {
         svg {
             fill: $colorLogo;
             width: 120px;
+            height: 100px;
         }
     }
 

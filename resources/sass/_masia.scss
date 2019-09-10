@@ -1,28 +1,38 @@
+.container-fluid {
+  height: 100%;
+}
 
-.container-fluid{
+.masia,
+.sleep,
+.aboutUs,
+.contact {
+  height: 70vh;
+}
+
+.masia-top,
+.masia-bottom {
+  height: 31.7vh;
+  display: flex;
+}
+
+.imageMasia {
+  overflow: hidden;
+  text-align: center;
+  img {
     height: 100%;
+  }
 }
-.masia, .sleep, .aboutUs, .contact{
-    height: 70vh;
-   
-}
-.masia-top, .masia-bottom{
-    height: 31.7vh;
-    display: flex;
-}
-.imageMasia{
-    background: url("assets/portalMasiaCanCruz.jpg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.imageMasia2{
-    background: url("assets/portalMasiaCanCruz.jpg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.imageMasia2, .descriptionMasia2{
+
+.imageMasia2 {
+  overflow: hidden;
+  text-align: center;
+  img {
     height: 100%;
-    width: 50%;
+  }
+}
+
+.imageMasia2,
+.descriptionMasia2 {
+  height: 100%;
+  width: 50%;
 }
