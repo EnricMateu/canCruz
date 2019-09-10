@@ -49366,13 +49366,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 __webpack_require__(/*! /Applications/MAMP/htdocs/canCruz/resources/js/app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/canCruz/resources/sass/app.scss */"./resources/sass/app.scss");
-=======
-__webpack_require__(/*! E:\xampp_factoriaf5\htdocs\canCruz\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! E:\xampp_factoriaf5\htdocs\canCruz\resources\sass\app.scss */"./resources/sass/app.scss");
->>>>>>> 4c35b021a56c46e20d501e27b7833ad59c6ddd2a
 
 
 /***/ })

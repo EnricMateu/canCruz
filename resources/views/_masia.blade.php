@@ -1,4 +1,4 @@
-<h1 class="primary-title">La Masia</h1>
+<h1 class="primary-title laMasia">La Masia</h1>
             <!--  <div class="col-md-12">
             </div> -->
             <div class="col-md-12 masia-top">
