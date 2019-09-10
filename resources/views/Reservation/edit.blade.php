@@ -2,10 +2,10 @@
     @csrf
     @method('patch')
     <label>Nombre</label>
-    <input type="text" name="name" value="{{$reservation->name}}"> 
+    <input type="text" name="name" value="{{$reservation->name}}">
     <br>
     <label>Apellidos</label>
-    <input type="text" name="surname" value="{{$reservation->surname}}"> 
+    <input type="text" name="surname" value="{{$reservation->surname}}">
     <br>
     <label>Email</label>
     <input type="email" name="email" value="{{$reservation->email}}">
@@ -32,13 +32,31 @@
     <input type="text" name="numberPets" value="{{$reservation->numberPets}}">
     <br>
     <label>Desayuno</label>
-    <input type="checkbox" name="breakfast" value="1" >
+    <input type="checkbox" name="breakfast" value="1" <?php
+if ($reservation->breakfast == 1) {
+  echo "checked";
+}
+
+?>>
     <br>
     <label>Comida</label>
-    <input type="checkbox" name="lunch"  value="1">
+    <input type="checkbox" name="lunch" value="1" <?php
+if ($reservation->lunch == 1) {
+  echo "checked";
+}
+
+?>>
+    
     <br>
     <label for="dinner">Cena</label>
-    <input type="checkbox" name="dinner" value='1'>
+    <input type="checkbox" name="dinner" value='1'
+    
+    <?php
+if ($reservation->dinner == 1) {
+  echo "checked";
+}
+
+?>>
     <br>
     <label for="comments">Comentarios</label>
     <input type="text" name="comments" value="{{$reservation->comments}}">
@@ -47,7 +65,13 @@
     <input type="text" name="language" value="{{$reservation->language}}">
     <br>
     <label for="validated">Validado</label>
-    <input type="checkbox" name="validated" value="1" >
+    <input type="checkbox" name="validated" value="1"
+    <?php
+if ($reservation->validated == 1) {
+  echo "checked";
+}
+
+?>>
     <br>
     <input type="submit">
 </form>

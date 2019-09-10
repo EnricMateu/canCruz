@@ -13,6 +13,12 @@ class ReservationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+public function __construct()
+{
+    $this->middleware('auth')->except(['create']);
+}
+
     public function index()
     {
         $reservation = Reservation::all();
