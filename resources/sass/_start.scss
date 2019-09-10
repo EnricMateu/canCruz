@@ -16,6 +16,7 @@ body {
     bottom: 0;
     height: 10vh;
     width: 100%;
+    
 
     #form1 {
       height: 100%;
@@ -23,16 +24,32 @@ body {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      
-      
-      input[type="date"]{
-        background-color: transparent;
-        border:none;
-        border-bottom: 1px dotted white;
-      }
-    }
 
+      input[type="date"] {
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        border-bottom: 2px dashed #fff;
+        font-family: Rokkitt-Regular;
+        text-align: center;
+        padding: 2px 5px;
+        font-size: 20px;
+        font-weight: 150;
+        text-align: center;
+      }
+      input[type="submit"]{
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        border-bottom: 1px solid #fff;
+      }
+    
+        
+      }
+
+    }
   }
+  
   #slogan {
     position: absolute;
     top: 0;
@@ -87,4 +104,4 @@ body {
       }
     }
   }
-}
+

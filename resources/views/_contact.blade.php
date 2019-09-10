@@ -1,4 +1,4 @@
-<h1>Contacte</h1>
+<h1 class="primary-title">Contacte</h1>
             <div class="col-md-12 mapForm">
                 <div class="formConctactAndLocation">
                     <div class="formContact">

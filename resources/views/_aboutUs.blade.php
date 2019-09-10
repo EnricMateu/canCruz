@@ -1,4 +1,4 @@
- <h1>Que fem?</h1>
+ <h1 class="primary-title">Que fem?</h1>
             <!--  <div class="col-md-12">
                 </div> -->
             <div class="col-md-12 about-top">

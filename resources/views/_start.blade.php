@@ -31,8 +31,8 @@
 </h1>
 <div class="reservationDate">
     <form action="" method="POST" id="form1">
-        <input type="date" name="checkinDate">
-        <input type="date" name="checkoutDate">
-        <input type="submit" name="startButton" button>
+        <input type="date" name="checkinDate"> <b>desde el</b>
+        <input type="date" name="checkoutDate"><b>fins al</b>
+        <input type="submit" name="startButton" button value="Confirmar disponibilitat">
     </form>
 </div>
