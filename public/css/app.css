@@ -5,6 +5,11 @@
   src: url("/fonts/Rokkitt-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Signika", sans-serif;
+  src: url("/fonts/Signika-Regular.ttf"), url("/fonts/Signika-SemiBold.ttf");
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -10682,9 +10687,64 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0 2%;
 }
 
-.start #slogan {
+.start .reservationDate #form1 input[type=date],
+.start .reservationDate #form1 input[type=number] {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-bottom: 2px dashed #fff;
+  font-family: Rokkitt-Regular;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 150;
+  text-align: center;
+  margin-right: 1%;
+}
+
+.start .reservationDate #form1 input[type=number] {
+  margin-right: 1%;
+}
+
+.start .reservationDate #form1 ::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.start .reservationDate #form1 ::-moz-placeholder {
+  color: #fff;
+}
+
+.start .reservationDate #form1 :-ms-input-placeholder {
+  color: #fff;
+}
+
+.start .reservationDate #form1 ::-ms-input-placeholder {
+  color: #fff;
+}
+
+.start .reservationDate #form1 ::placeholder {
+  color: #fff;
+}
+
+.start .reservationDate #form1 input[type=submit] {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-size: 28px;
+}
+
+.start .reservationDate #form1 span {
+  font-family: Signika;
+  font-size: 28px;
+  letter-spacing: 1.99px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#slogan {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -10697,57 +10757,57 @@ body {
 }
 
 @media screen and (min-width: 320px) {
-  .start #slogan {
+  #slogan {
     font-size: 24px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .start #slogan {
+  #slogan {
     font-size: 59px;
   }
 }
 
-.start .navBar {
+.navBar {
   display: flex;
   max-height: 100px;
   padding: 5%;
 }
 
 @media screen and (min-width: 320px) {
-  .start .navBar {
+  .navBar {
     padding: 5%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .start .navBar {
+  .navBar {
     padding: 5%;
   }
 }
 
-.start .navBar .logo {
+.navBar .logo {
   height: 10px;
   width: 4rem;
 }
 
-.start .navBar .logo svg {
+.navBar .logo svg {
   fill: white;
   width: 120px;
   height: 100px;
 }
 
-.start .navBar nav {
+.navBar nav {
   display: flex;
   justify-content: center;
 }
 
-.start .navBar nav .list li {
+.navBar nav .list li {
   display: inline-block;
   padding-right: 2rem;
 }
 
-.start .navBar nav .list li a {
+.navBar nav .list li a {
   text-decoration: none;
   color: #fff;
 }

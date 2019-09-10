@@ -16,7 +16,6 @@ body {
     bottom: 0;
     height: 10vh;
     width: 100%;
-    
 
     #form1 {
       height: 100%;
@@ -24,84 +23,103 @@ body {
       display: flex;
       justify-content: space-around;
       align-items: center;
+      padding: 0 2%;
 
-      input[type="date"] {
+      input[type="date"],
+      input[type="number"] {
         background-color: transparent;
         color: #fff;
         border: none;
         border-bottom: 2px dashed #fff;
         font-family: Rokkitt-Regular;
         text-align: center;
-        padding: 2px 5px;
-        font-size: 20px;
+        font-size: 28px;
         font-weight: 150;
         text-align: center;
+        margin-right: 1%;
+        
+       
       }
-      input[type="submit"]{
+      input[type="number"]{
+        margin-right: 1%;
+        
+      }
+      ::placeholder {
+        color: #fff;
+       
+        
+      }
+      input[type="submit"] {
         background-color: transparent;
         color: #fff;
         border: none;
         border-bottom: 1px solid #fff;
+        font-size: 28px;
       }
-    
-        
-      }
+      span {
+        font-family: Signika;
+        font-size: 28px;
+        letter-spacing: 1.99px;
+        text-align: center;
+        color: #ffffff;
+       
 
+      }
     }
   }
-  
-  #slogan {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: $startSlogan-size;
-    height: 100px;
-    color: #fff;
-    @media screen and (min-width: $break-small) {
-      font-size: $startSlogan-size-font-mobile;
-    }
-    @media screen and (min-width: $break-large) {
-      font-size: $startSlogan-size-font-desktop;
-    }
+}
+
+#slogan {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: $startSlogan-size;
+  height: 100px;
+  color: #fff;
+  @media screen and (min-width: $break-small) {
+    font-size: $startSlogan-size-font-mobile;
   }
-  .navBar {
-    display: flex;
-    max-height: 100px;
+  @media screen and (min-width: $break-large) {
+    font-size: $startSlogan-size-font-desktop;
+  }
+}
+.navBar {
+  display: flex;
+  max-height: 100px;
+  padding: 5%;
+  @media screen and (min-width: $break-small) {
     padding: 5%;
-    @media screen and (min-width: $break-small) {
-        padding: 5%;
-      }
-      @media screen and (min-width: $break-large) {
-        padding: 5%;
-      }
+  }
+  @media screen and (min-width: $break-large) {
+    padding: 5%;
+  }
 
-    .logo {
-      height: 10px;
-      width: 4rem;
+  .logo {
+    height: 10px;
+    width: 4rem;
 
-        svg {
-            fill: $colorLogo;
-            width: 120px;
-            height: 100px;
-        }
+    svg {
+      fill: $colorLogo;
+      width: 120px;
+      height: 100px;
     }
+  }
 
-    nav {
-      display: flex;
-      justify-content: center;
-      .list {
-        li {
-          display: inline-block;
-          padding-right: 2rem;
-          a {
-            text-decoration: none;
-            color: #fff;
-          }
+  nav {
+    display: flex;
+    justify-content: center;
+    .list {
+      li {
+        display: inline-block;
+        padding-right: 2rem;
+        a {
+          text-decoration: none;
+          color: #fff;
         }
       }
     }
   }
-
+}
