@@ -11,6 +11,8 @@
 |
 */
 
+use App\Http\Controllers\Autenticar;
+
 Route::get('/', function () {
     return view('welcome');
 });

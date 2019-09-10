@@ -88,7 +88,7 @@ public function __construct()
             $reservation->setBreakfastNull($request->breakfast);
             $reservation->setLunchNull($request->lunch);
             $reservation->setDinnerNull($request->dinner);
-            $reservation->setValidatedNull($request->validated);
+            $reservation->validate($request->validated);
             return redirect('reservation');
        
     }
@@ -105,3 +105,4 @@ public function __construct()
         return redirect('reservation');
     }
 }
+

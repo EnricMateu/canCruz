@@ -9,7 +9,7 @@ class Reservation extends Model
  protected $fillable= ['name', 'surname', 'email', 'telephone',
   'postalCode', 'checkinDate', 'checkoutDate','roomNumber','numberPeople', 
   'numberPets', 'breakfast', 'lunch', 'dinner','comments', 'language', 
-  'dataProtection','validated'];
+  'dataProtection'];
 
   public function setBreakfastNull(int $breakfast = null) :bool
   {
@@ -38,14 +38,17 @@ class Reservation extends Model
     $this->save();
     return true;
   }
-  public function setValidatedNull(int $validated = null) :bool
+  public function validate(int $validate = null) :bool
   {
-    if ($validated == 1){
-      return false;
-    }
-    $this->validated = null;
+    if ($validate != 1){
+      $this->validated = null;
     $this->save();
     return true;
+      
+    }
+    $this->validated = 1;
+    $this->save();
+      return false;
   }
 }
 
