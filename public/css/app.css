@@ -10660,6 +10660,13 @@ a.text-dark:focus {
   width: 100%;
 }
 
+.masia,
+.sleep,
+.aboutUs,
+.contact {
+  height: 100vh;
+}
+
 body {
   width: 100%;
   font-family: Rokkitt;
@@ -10816,41 +10823,65 @@ body {
   height: 100%;
 }
 
-.masia,
-.sleep,
-.aboutUs,
-.contact {
-  height: 70vh;
+.masia {
+  padding: 30px;
 }
 
-.masia-top,
-.masia-bottom {
-  height: 31.7vh;
+.masia .masia-top {
+  display: flex;
+  height: 100%;
+}
+
+.masia .masia-top .imageMasia {
+  width: 50%;
+  position: absolute;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 90%;
+  padding: 30px 0;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.masia .masia-top .imageMasia img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.masia .masia-top .imageMasia2 {
+  width: 70%;
+  position: absolute;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 65%;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.masia .masia-top .imageMasia2 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.masia .masia-bottom {
   display: flex;
 }
 
-.imageMasia {
-  overflow: hidden;
-  text-align: center;
-}
-
-.imageMasia img {
-  height: 100%;
-}
-
-.imageMasia2 {
-  overflow: hidden;
-  text-align: center;
-}
-
-.imageMasia2 img {
-  height: 100%;
-}
-
-.imageMasia2,
-.descriptionMasia2 {
-  height: 100%;
-  width: 50%;
+.masia .descriptionMasia {
+  width: 47%;
+  position: absolute;
+  top: 527px;
+  right: 0;
+  padding-right: 30px;
+  padding-top: 30px;
 }
 
 .sleep-room {
@@ -10959,11 +10990,5 @@ iframe {
   height: 21.5vh;
   width: 100%;
   display: flex;
-}
-
-.imageMasia,
-.descriptionMasia {
-  height: 100%;
-  width: 50%;
 }
 
