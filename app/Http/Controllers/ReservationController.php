@@ -22,7 +22,7 @@ public function __construct()
     public function index()
     {
         $reservation = Reservation::all();
-        //var_dump ($reservation);  
+        
         return view('Reservation/reservation', ['reservation' => $reservation]);
     }
 
@@ -47,7 +47,7 @@ public function __construct()
         Reservation::create($request->all()); 
         return redirect('reservation/create');
         }
-
+  
     /**
      * Display the specified resource.
      *
@@ -85,6 +85,10 @@ public function __construct()
     public function update(Request $request, Reservation $reservation)
     {
             $reservation->update($request->all());
+            $reservation->setBreakfastNull($request->breakfast);
+            $reservation->setLunchNull($request->lunch);
+            $reservation->setDinnerNull($request->dinner);
+            $reservation->setValidatedNull($request->validated);
             return redirect('reservation');
        
     }

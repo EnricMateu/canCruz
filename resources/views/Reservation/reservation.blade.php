@@ -35,7 +35,7 @@
                     @csrf
                     @method('edit')
                     <input type="submit" value="Editar">
-    </form>
+                </form>
             </td>
             <td>
                 <form method="POST" action="/reservation/{{$value->id}}">

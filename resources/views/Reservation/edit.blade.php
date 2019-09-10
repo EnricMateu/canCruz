@@ -33,7 +33,7 @@
     <br>
     <label>Desayuno</label>
     <input type="checkbox" name="breakfast" value="1" <?php
-if ($reservation->breakfast == 1) {
+if ($reservation->breakfast) {
   echo "checked";
 }
 
@@ -41,7 +41,7 @@ if ($reservation->breakfast == 1) {
     <br>
     <label>Comida</label>
     <input type="checkbox" name="lunch" value="1" <?php
-if ($reservation->lunch == 1) {
+if ($reservation->lunch) {
   echo "checked";
 }
 
@@ -52,7 +52,7 @@ if ($reservation->lunch == 1) {
     <input type="checkbox" name="dinner" value='1'
     
     <?php
-if ($reservation->dinner == 1) {
+if ($reservation->dinner) {
   echo "checked";
 }
 
@@ -67,7 +67,7 @@ if ($reservation->dinner == 1) {
     <label for="validated">Validado</label>
     <input type="checkbox" name="validated" value="1"
     <?php
-if ($reservation->validated == 1) {
+if ($reservation->validated) {
   echo "checked";
 }
 

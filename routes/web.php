@@ -23,7 +23,3 @@ Route::middleware('auth')->group(function(){
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/reservation', 'ReservationController');
-
-// Route::group(['middleware' => 'auth'], function () {
-//     Route::get('reservation', 'ReservationController@index');
-// });
