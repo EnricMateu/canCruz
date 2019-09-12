@@ -1,19 +1,20 @@
-// Body
-$body-bg: #f8fafc;
+$startSlogan-size: 100%;
+$startSlogan-size-font-mobile: 24px;
+$startSlogan-size-font-desktop: 59px;
+$break-small: 320px;
+$break-large: 768px;
 
-// Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+$font-family-title: "Rokkitt", serif;
 
-// Colors
-$blue: #3490dc;
-$indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66d9b;
-$red: #e3342f;
-$orange: #f6993f;
-$yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;
+$colorLogo: white;
+
+@font-face {
+  font-family: "Rokkitt", serif;
+  src: url("/fonts/Rokkitt-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Signika', sans-serif;
+  src: url("/fonts/Signika-Regular.ttf"),
+        url("/fonts/Signika-SemiBold.ttf");
+}
