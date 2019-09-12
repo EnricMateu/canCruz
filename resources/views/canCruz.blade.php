@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <div class="btn-book-fix">
+        <span>Reserva</span>
+    </div>
     <div class="container-fluid">
 
         <div id="start" class="row start">
