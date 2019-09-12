@@ -13,8 +13,8 @@
     <table>
         <th>Listado de reservas</th>
         <form action="/logout" method="POST">
-        @csrf
-        <input type="submit" value="logout">
+            @csrf
+            <input type="submit" value="logout">
         </form>
         <?php
 
@@ -22,7 +22,7 @@
 ?>
 
         <tr>
-            <!-- preguntar a david como validar reserva -->
+
 
             <td><?php echo $value->name ?></td>
             <td><?php echo $value->surname ?></td>

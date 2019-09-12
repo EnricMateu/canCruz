@@ -1,10 +1,10 @@
 <form method="POST" action="/reservation">
     @csrf
     <label>Nombre</label>
-    <input type="text" name="name"> 
+    <input type="text" name="name">
     <br>
     <label>Apellidos</label>
-    <input type="text" name="surname"> 
+    <input type="text" name="surname">
     <br>
     <label>Email</label>
     <input type="email" name="email">
@@ -16,7 +16,8 @@
     <input type="text" name="postalCode">
     <br>
     <label>Fecha de entrada</label>
-    <input type="date" value="<?php echo date("Y-m-d\TH-i");?>" min="<?php echo date("Y-m-d\TH-i");?>" name="checkinDate">
+    <input type="date" value="<?php echo date("Y-m-d\TH-i");?>" min="<?php echo date("Y-m-d\TH-i");?>"
+        name="checkinDate">
     <br>
     <label>Fecha de salida</label>
     <input type="date" name="checkoutDate">
